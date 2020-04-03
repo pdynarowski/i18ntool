@@ -1,0 +1,17 @@
+<mvc:View controllerName="i18ntool.i18ntool.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox width="600px" class="sapUiSmallMargin">
+							<Input id="src-translate" placeholder="Podaj tekst do konwersji.."></Input>
+							<Input id="dst-translate" placeholder="..a tu pojawi się rezultat"></Input>
+							<Button class="sapUiTinyMarginTop" icon="sap-icon://SAP-icons-TNT/etl-job" text="Konwersja" press=".onKonwersja"/>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
